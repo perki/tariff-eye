@@ -1,0 +1,34 @@
+
+
+#createEmpty;
+This worksheet does not accept discount;This worksheet does not accept discounts
+
+#getDropROF;
+Clear this discount;Clear this discount
+
+#getMaxSelector;
+Max Fee:;Max Fee:
+No Max!;No Max!
+
+#getPopup;
+Discount;Discount
+OK : close;OK : close
+
+#getStatus;
+Cannot determine this discount type;Cannot determine this discount type
+Discount is a fixed fee of %1 %3.;Discount is a fixed fee of %1 %3.
+Discount is a maximum fee of %2 %3.;Discount is a maximal fee of %2 %3.
+Discount is a maximum fee of %2 %3|and a minimum of %1 %3.;Discount is a maximal fee of %2 %3|and a minimal of %1 %3.
+Discount is a minimum fee of %1 %3.;Discount is a minimal fee of %1 %3.
+Discount is null !;Discount is zero !
+Discount rate of %0%% ;Discount rate of %0%% 
+Discount rate of %0%% with a minimum fee of %1 %3.;Discount rate of %0%% with a minimal fee of %1 %3.
+Discount rate of %0%% |with a maximum fee of %2 %3 and a minimum of %1 %3.;Discount rate of %0%% |with a maximal fee of %2 %3 and a minimal of %1 %3.
+Discount rate of %0%% |with a maximum fee of %2 %3.;Discount rate of %0%% |with a maximum fee of %2 %3.
+Free !;Free !
+No discount !;No discount !
+
+
+
+
+

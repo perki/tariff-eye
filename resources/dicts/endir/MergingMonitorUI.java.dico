@@ -1,0 +1,32 @@
+
+#actionPerformed;
+Stop this operation;Stop this operation
+
+#getChooserPanel;
+Auto Import :;Auto Import :
+
+#getContinueButton;
+Continue;Continue
+
+#getGradeTitle;
+Average;Average
+Fair;Almost perfect
+Perfect;Perfect
+Poor;Poor
+
+#init;
+Replace;Replace
+Sum;Sum
+The actual data may either be REPLACED or SUMMED with the imported portfolio.;The actual data may either be REPLACED or SUMMED with the imported portfolio.
+There is nothing to import from the selected portfolio;There is nothing to import from the selected portfolio
+
+#nextTarif
+Auto Import if already choosen.;Auto Import if already choosen.
+Proposition above have already been choosen once.;Proposition above has already been chose once.
+Proposition(s) above have already been choosen once.;Proposition(s) above have already been chose once.
+
+#toString;
+if better than average;If better than average
+if better than fair;If almost perfect
+if perfect match;If perfect match
+never. (Manual Import);Never (Manual Import)

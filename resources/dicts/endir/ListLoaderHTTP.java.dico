@@ -1,0 +1,24 @@
+
+#<init>;
+Tariffs Updates;Tariff Updates
+
+#actionImportFiles
+No tariff selected.;No tariff selected.
+
+#buildSubscriptionInfoPanel
+Warning: ;Warning: 
+Your tarification subscription expires on ;Your tarification subscription expires on 
+Your tarification subscription has expired.;Your tarification subscription has expired.
+
+#refresh
+The selected source does not contain any tariff;The selected source does not contain any tariff
+
+#refresh;
+There is no new Tariff;There is no new tariff
+Your database is already up to date;Your database is already up to date
+
+#upFileBut;
+From Directory;From Directory
+
+#upInternetBut;
+From Internet;From Internet

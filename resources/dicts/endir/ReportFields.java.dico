@@ -1,0 +1,25 @@
+
+#addTranslatedString
+BuyText;Buying transactions
+EachText;the value of each
+EffectiveText;Effective rate
+FileNameText;File name
+MarginalText;Marginal rate
+PublishDateText;Publish date
+SellText;Selling transactions
+SumText;the sum of all
+
+#addTranslatedString;
+GrandTotalText;Grand total:
+HeadEffectiveRate;Effective rate
+HeadFee;Fee
+HeadFrom;From
+HeadMarginalRate;Marginal rate
+HeadMinFee;Minimal fee
+TextApplies;Applies on:
+TextCurrency;Currency
+TextFixedFee;Fixed fee
+TextMethod;Fee computed using:
+TextRate;Applied rate:
+TextReference;Reference
+TotalAssetsText;Total assets:

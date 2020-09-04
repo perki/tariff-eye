@@ -1,0 +1,272 @@
+String[][] sr = new String[231][2];
+
+sr[0]= new String[] {"Africa","Algeria"};
+sr[1]= new String[] {"Africa","Angola"};
+sr[2]= new String[] {"Africa","Benin"};
+sr[3]= new String[] {"Africa","Botswana"};
+sr[4]= new String[] {"Africa","Bouvet Island"};
+sr[5]= new String[] {"Africa","Burkina Faso"};
+sr[6]= new String[] {"Africa","Burundi"};
+sr[7]= new String[] {"Africa","Cameroon"};
+sr[8]= new String[] {"Africa","Cape Verde"};
+sr[9]= new String[] {"Africa","Central African Republic"};
+sr[10]= new String[] {"Africa","Chad"};
+sr[11]= new String[] {"Africa","Comoros"};
+sr[12]= new String[] {"Africa","Congo, Democratic Republic of the (Zaire)"};
+sr[13]= new String[] {"Africa","Congo, Republic of"};
+sr[14]= new String[] {"Africa","Djibouti"};
+sr[15]= new String[] {"Africa","Egypt"};
+sr[16]= new String[] {"Africa","Equatorial Guinea"};
+sr[17]= new String[] {"Africa","Eritrea"};
+sr[18]= new String[] {"Africa","Ethiopia"};
+sr[19]= new String[] {"Africa","Gabon"};
+sr[20]= new String[] {"Africa","Gambia"};
+sr[21]= new String[] {"Africa","Ghana"};
+sr[22]= new String[] {"Africa","Guinea"};
+sr[23]= new String[] {"Africa","Guinea Bissau"};
+sr[24]= new String[] {"Africa","Ivory Coast (Cote D'Ivoire)"};
+sr[25]= new String[] {"Africa","Kenya"};
+sr[26]= new String[] {"Africa","Lesotho"};
+sr[27]= new String[] {"Africa","Liberia"};
+sr[28]= new String[] {"Africa","Libya"};
+sr[29]= new String[] {"Africa","Madagascar"};
+sr[30]= new String[] {"Africa","Malawi"};
+sr[31]= new String[] {"Africa","Mali"};
+sr[32]= new String[] {"Africa","Mauritania"};
+sr[33]= new String[] {"Africa","Mauritius"};
+sr[34]= new String[] {"Africa","Mayotte"};
+sr[35]= new String[] {"Africa","Morocco"};
+sr[36]= new String[] {"Africa","Mozambique"};
+sr[37]= new String[] {"Africa","Namibia"};
+sr[38]= new String[] {"Africa","Niger"};
+sr[39]= new String[] {"Africa","Nigeria"};
+sr[40]= new String[] {"Africa","Reunion"};
+sr[41]= new String[] {"Africa","Rwanda"};
+sr[42]= new String[] {"Africa","Sao Tome and Principe"};
+sr[43]= new String[] {"Africa","Senegal"};
+sr[44]= new String[] {"Africa","Seychelles"};
+sr[45]= new String[] {"Africa","Sierra Leone"};
+sr[46]= new String[] {"Africa","Somalia"};
+sr[47]= new String[] {"Africa","South Africa"};
+sr[48]= new String[] {"Africa","Sudan"};
+sr[49]= new String[] {"Africa","Swaziland"};
+sr[50]= new String[] {"Africa","Tanzania"};
+sr[51]= new String[] {"Africa","Togo"};
+sr[52]= new String[] {"Africa","Tunisia"};
+sr[53]= new String[] {"Africa","Uganda"};
+sr[54]= new String[] {"Africa","Zambia"};
+sr[55]= new String[] {"Africa","Zimbabwe"};
+sr[56]= new String[] {"Asia","Afghanistan "};
+sr[57]= new String[] {"Asia","Bangladesh"};
+sr[58]= new String[] {"Asia","Bhutan"};
+sr[59]= new String[] {"Asia","Brunei"};
+sr[60]= new String[] {"Asia","Cambodia"};
+sr[61]= new String[] {"Asia","China"};
+sr[62]= new String[] {"Asia","Hong Kong"};
+sr[63]= new String[] {"Asia","India"};
+sr[64]= new String[] {"Asia","Indonesia"};
+sr[65]= new String[] {"Asia","Japan"};
+sr[66]= new String[] {"Asia","Kazakhstan"};
+sr[67]= new String[] {"Asia","Kyrgyzstan"};
+sr[68]= new String[] {"Asia","Laos"};
+sr[69]= new String[] {"Asia","Macau"};
+sr[70]= new String[] {"Asia","Malaysia"};
+sr[71]= new String[] {"Asia","Maldives"};
+sr[72]= new String[] {"Asia","Mongolia"};
+sr[73]= new String[] {"Asia","Myanmar"};
+sr[74]= new String[] {"Asia","Nepal"};
+sr[75]= new String[] {"Asia","North Korea"};
+sr[76]= new String[] {"Asia","Northern Mariana Islands"};
+sr[77]= new String[] {"Asia","Pakistan"};
+sr[78]= new String[] {"Asia","Philippines"};
+sr[79]= new String[] {"Asia","Singapore"};
+sr[80]= new String[] {"Asia","South Korea"};
+sr[81]= new String[] {"Asia","Sri Lanka"};
+sr[82]= new String[] {"Asia","Taiwan"};
+sr[83]= new String[] {"Asia","Tajikistan"};
+sr[84]= new String[] {"Asia","Thailand"};
+sr[85]= new String[] {"Asia","Turkmenistan"};
+sr[86]= new String[] {"Asia","Uzbekistan"};
+sr[87]= new String[] {"Asia","Vietnam"};
+sr[88]= new String[] {"Australiasia","American Samoa"};
+sr[89]= new String[] {"Australiasia","Australia"};
+sr[90]= new String[] {"Australiasia","Christmas Island"};
+sr[91]= new String[] {"Australiasia","Cocos (Keeling) Islands"};
+sr[92]= new String[] {"Australiasia","Cook Islands"};
+sr[93]= new String[] {"Australiasia","East Timor"};
+sr[94]= new String[] {"Australiasia","Fiji"};
+sr[95]= new String[] {"Australiasia","Guam (USA)"};
+sr[96]= new String[] {"Australiasia","Kiribati"};
+sr[97]= new String[] {"Australiasia","Marshall Islands"};
+sr[98]= new String[] {"Australiasia","Micronesia"};
+sr[99]= new String[] {"Australiasia","Nauru"};
+sr[100]= new String[] {"Australiasia","New Caledonia (French)"};
+sr[101]= new String[] {"Australiasia","New Zealand"};
+sr[102]= new String[] {"Australiasia","Niue"};
+sr[103]= new String[] {"Australiasia","Norfolk Island"};
+sr[104]= new String[] {"Australiasia","Palau"};
+sr[105]= new String[] {"Australiasia","Papua New Guinea"};
+sr[106]= new String[] {"Australiasia","Pitcairn Island"};
+sr[107]= new String[] {"Australiasia","Polynesia (French)"};
+sr[108]= new String[] {"Australiasia","Samoa"};
+sr[109]= new String[] {"Australiasia","Solomon Islands"};
+sr[110]= new String[] {"Australiasia","Tokelau"};
+sr[111]= new String[] {"Australiasia","Tonga"};
+sr[112]= new String[] {"Australiasia","Tuvalu"};
+sr[113]= new String[] {"Australiasia","Vanuatu"};
+sr[114]= new String[] {"Australiasia","Wallis and Futuna Islands"};
+sr[115]= new String[] {"Caribbean","Anguilla"};
+sr[116]= new String[] {"Caribbean","Antigua and Barbuda"};
+sr[117]= new String[] {"Caribbean","Aruba"};
+sr[118]= new String[] {"Caribbean","Bahamas"};
+sr[119]= new String[] {"Caribbean","Barbados"};
+sr[120]= new String[] {"Caribbean","Bermuda"};
+sr[121]= new String[] {"Caribbean","Cayman Islands"};
+sr[122]= new String[] {"Caribbean","Cuba"};
+sr[123]= new String[] {"Caribbean","Dominica"};
+sr[124]= new String[] {"Caribbean","Dominican Republic"};
+sr[125]= new String[] {"Caribbean","Grenada"};
+sr[126]= new String[] {"Caribbean","Guadeloupe (French)"};
+sr[127]= new String[] {"Caribbean","Haiti"};
+sr[128]= new String[] {"Caribbean","Jamaica"};
+sr[129]= new String[] {"Caribbean","Martinique (French)"};
+sr[130]= new String[] {"Caribbean","Montserrat"};
+sr[131]= new String[] {"Caribbean","Netherlands Antilles"};
+sr[132]= new String[] {"Caribbean","Puerto Rico"};
+sr[133]= new String[] {"Caribbean","Saint Kitts & Nevis"};
+sr[134]= new String[] {"Caribbean","Saint Lucia"};
+sr[135]= new String[] {"Caribbean","Saint Vincent & Grenadines"};
+sr[136]= new String[] {"Caribbean","Trinidad and Tobago"};
+sr[137]= new String[] {"Caribbean","Turks and Caicos Islands"};
+sr[138]= new String[] {"Caribbean","Virgin Islands"};
+sr[139]= new String[] {"Central America","Belize"};
+sr[140]= new String[] {"Central America","Costa Rica"};
+sr[141]= new String[] {"Central America","El Salvador"};
+sr[142]= new String[] {"Central America","Guatemala"};
+sr[143]= new String[] {"Central America","Honduras"};
+sr[144]= new String[] {"Central America","Nicaragua"};
+sr[145]= new String[] {"Central America","Panama"};
+sr[146]= new String[] {"Europe","Albania"};
+sr[147]= new String[] {"Europe","Andorra"};
+sr[148]= new String[] {"Europe","Armenia"};
+sr[149]= new String[] {"Europe","Austria"};
+sr[150]= new String[] {"Europe","Azerbaijan"};
+sr[151]= new String[] {"Europe","Belarus"};
+sr[152]= new String[] {"Europe","Belgium"};
+sr[153]= new String[] {"Europe","Bosnia-Herzegovina"};
+sr[154]= new String[] {"Europe","Bulgaria"};
+sr[155]= new String[] {"Europe","Croatia"};
+sr[156]= new String[] {"Europe","Cyprus"};
+sr[157]= new String[] {"Europe","Czech Republic"};
+sr[158]= new String[] {"Europe","Denmark"};
+sr[159]= new String[] {"Europe","Estonia"};
+sr[160]= new String[] {"Europe","Faroe Islands"};
+sr[161]= new String[] {"Europe","Finland"};
+sr[162]= new String[] {"Europe","France"};
+sr[163]= new String[] {"Europe","Georgia"};
+sr[164]= new String[] {"Europe","Germany"};
+sr[165]= new String[] {"Europe","Gibraltar"};
+sr[166]= new String[] {"Europe","Greece"};
+sr[167]= new String[] {"Europe","Greenland"};
+sr[168]= new String[] {"Europe","Holy See"};
+sr[169]= new String[] {"Europe","Hungary"};
+sr[170]= new String[] {"Europe","Iceland"};
+sr[171]= new String[] {"Europe","Ireland"};
+sr[172]= new String[] {"Europe","Italy"};
+sr[173]= new String[] {"Europe","Latvia"};
+sr[174]= new String[] {"Europe","Liechtenstein"};
+sr[175]= new String[] {"Europe","Lithuania"};
+sr[176]= new String[] {"Europe","Luxembourg"};
+sr[177]= new String[] {"Europe","Macedonia"};
+sr[178]= new String[] {"Europe","Malta"};
+sr[179]= new String[] {"Europe","Moldova"};
+sr[180]= new String[] {"Europe","Monaco"};
+sr[181]= new String[] {"Europe","Netherlands"};
+sr[182]= new String[] {"Europe","Norway"};
+sr[183]= new String[] {"Europe","Poland"};
+sr[184]= new String[] {"Europe","Portugal"};
+sr[185]= new String[] {"Europe","Romania"};
+sr[186]= new String[] {"Europe","Russia"};
+sr[187]= new String[] {"Europe","San Marino"};
+sr[188]= new String[] {"Europe","Schengen countries"};
+sr[189]= new String[] {"Europe","Serbia and Montenegro"};
+sr[190]= new String[] {"Europe","Slovakia"};
+sr[191]= new String[] {"Europe","Slovenia"};
+sr[192]= new String[] {"Europe","Spain"};
+sr[193]= new String[] {"Europe","Svalbard and Jan Mayen Islands"};
+sr[194]= new String[] {"Europe","Sweden"};
+sr[195]= new String[] {"Europe","Switzerland"};
+sr[196]= new String[] {"Europe","Ukraine"};
+sr[197]= new String[] {"Europe","United Kingdom"};
+sr[198]= new String[] {"Middle East","Bahrain"};
+sr[199]= new String[] {"Middle East","Iran"};
+sr[200]= new String[] {"Middle East","Iraq"};
+sr[201]= new String[] {"Middle East","Israel"};
+sr[202]= new String[] {"Middle East","Jordan"};
+sr[203]= new String[] {"Middle East","Kuwait"};
+sr[204]= new String[] {"Middle East","Lebanon"};
+sr[205]= new String[] {"Middle East","Oman"};
+sr[206]= new String[] {"Middle East","Qatar"};
+sr[207]= new String[] {"Middle East","Saudi Arabia"};
+sr[208]= new String[] {"Middle East","Syria"};
+sr[209]= new String[] {"Middle East","Turkey"};
+sr[210]= new String[] {"Middle East","United Arab Emirates"};
+sr[211]= new String[] {"Middle East","Yemen"};
+sr[212]= new String[] {"North America","Canada"};
+sr[213]= new String[] {"North America","Mexico"};
+sr[214]= new String[] {"North America","Saint Pierre and Miquelon"};
+sr[215]= new String[] {"North America","Usa"};
+sr[216]= new String[] {"South America","Argentina"};
+sr[217]= new String[] {"South America","Bolivia"};
+sr[218]= new String[] {"South America","Brazil"};
+sr[219]= new String[] {"South America","Chile"};
+sr[220]= new String[] {"South America","Colombia"};
+sr[221]= new String[] {"South America","Ecuador"};
+sr[222]= new String[] {"South America","Falkland Islands"};
+sr[223]= new String[] {"South America","French Guiana"};
+sr[224]= new String[] {"South America","Guyana"};
+sr[225]= new String[] {"South America","Paraguay"};
+sr[226]= new String[] {"South America","Peru"};
+sr[227]= new String[] {"South America","S. Georgia & S. Sandwich Isls."};
+sr[228]= new String[] {"South America","Suriname"};
+sr[229]= new String[] {"South America","Uruguay"};
+sr[230]= new String[] {"South America","Venezuela"};
+
+
+// to be run after market
+
+HashMap regions = new HashMap();
+
+for (int j = 0; j < sr.length; j++) {
+	
+	region = (BCNode) regions.get(sr[j][0]);
+	if (region == null) {
+		region = m.createNode(sr[j][0]);
+		regions.put(sr[j][0],region);
+	}
+	
+	country = (BCNode) countries.get(sr[j][1]);
+	if (country != null) {
+		m.add(region,country,-1);
+	}
+	
+}
+
+
+// to be run on loc tree
+
+BCTree l = t.getTree("loc");
+HashMap regions = new HashMap();
+	
+for (int j = 0; j < sr.length; j++) {
+	
+	region = (BCNode) regions.get(sr[j][0]);
+	if (region == null) {
+		region = l.createNode(sr[j][0]);
+		regions.put(sr[j][0],region);
+	}
+	
+	l.createNode(sr[j][1],region);
+	
+}
+

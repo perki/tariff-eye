@@ -1,0 +1,25 @@
+
+#getPropertiesEditor;
+Accept Localization;Accepts Localization
+Accept assets;Accepts asset tariffs
+Accept futures;Accepts futures
+Accept root;Accepts root tariffs
+Accept simple;Accepts simple tariffs
+Accept transactions;Accepts transactions
+Check values to childrens;Check values to children
+PROP:prop_ancestor;Keep under
+PROP:prop_bool_dropable;Node can be dropped
+PROP:prop_bool_extendable;Node can have children
+PROP:prop_bool_movable;Node is movable
+Propagate settings;Propagate settings
+Propagate settings!;Propagate settings!
+TITLE;Title
+Tarif relies on Parent;Tariff relies on parent
+
+#toString
+! Do not propagate "Keep Under";! Do not propagate "Keep Under"
+
+#toString;
+"! Do not propagate ""Keep Under""";"! Do not propagate ""Keep Under"""
+Keep childrens under:;Keep children under:
+Keep childs under their actual parent;Keep children under their actual parent

@@ -1,0 +1,38 @@
+
+#<init>;
+Loading file;Loading file
+
+#error
+An error occured, operation cannot be completed.;An error occured, operation cannot be completed.
+
+#getDescription;
+Tarification Exchange Compressed Format;Tarification exchange compressed format
+Tarification Exchange Format;Tarification exchange format
+Tarification Quick Save;Tarification quick save
+XML non encrypted;Non encrypted XML
+
+#getPanel;
+Last modification date;Last modification date
+Portfolio;Portfolio
+Publication date;Publication date
+Tarification Modified;Tarification modified
+Tarification Original;Tarification original
+
+#openExternal
+Choose a tool to open:;Choose a tool to open:
+This file is not valid or you do not have the credentials to open it;This file is not valid or you do not have the credentials to open it
+
+#openTarification
+You do not have the credentials to open this file;You do not have the credentials to open this file
+
+#setMonitors
+Loading File;Loading File
+
+#setMonitors;
+DATA;Data
+DATA LOADING;Data loading...
+FILE READING;File reading...
+FileManagement:prohibitedInDemoMessage;This operation is not permitted in demo mode
+HEADER;Header
+UNCOMPRESSING;Uncompressing...
+WRITING TO FILE;Writing to file...

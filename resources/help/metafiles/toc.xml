@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<!DOCTYPE toc PUBLIC
+		"−//Sun Microsystems Inc.//DTD
+		JavaHelp TOC Version 2.0//EN"
+		"http://java.sun.com/products/javahelp/toc_2_0.dtd">
+
+<toc version="2.0">
+	<tocitem text="TariffEye Manual" target="manual_toc">
+		<tocitem text="Presentation of the Graphical user interface" target="gui_toc">
+			<tocitem text="1. The desktop window" target="gui_desktop"/>
+			<tocitem text="2. The simulator window" target="gui_simulator"/>
+			<tocitem text="3. The tree orderer window" target="gui_orderer"/>
+		</tocitem>
+	</tocitem>
+	
+	<tocitem text="Tutorials" target="tutorials_toc">
+	    <tocitem text="How to use the Simulator" target="t_sim_toc">
+		    <tocitem text="1. Open a new simulation" target="t_sim_open" presentationname="default"/>
+			<tocitem text="2. Fill your portfolio" target="t_sim_fill" />
+			<!--
+				<tocitem text="2.a. Manually assign values" target="t_sim_fill_a" />
+				<tocitem text="2.b. Automatic distribution of an amount in the Assets Workplaces" target="t_sim_fill_b" />
+				<tocitem text="2.c. Automatic turnover computation in the Tarification Workplaces" target="t_sim_fill_c" />
+				<tocitem text="2.d. Modify the distribution rates between the nested positions" target="t_sim_fill_d" />
+				<tocitem text="2.e. Advanced distribution options" target="t_sim_fill_e" />
+				<tocitem text="2.f. Fee calculation" target="t_sim_fill_f" />
+			</tocitem>
+			-->
+			<tocitem text="3. View your simulation" target="t_sim_view" />
+			<!--
+				<tocitem text="3.a. Manage your preferences" target="t_sim_view_a" />
+			</tocitem>
+			-->
+			<tocitem text="4. Add a discount to a tariff" target="t_sim_discount" />
+			<tocitem text="5. View simulation results on the graphical user interface" target="t_sim_results" />
+			<tocitem text="6. Print simulation results" target="t_sim_report">
+		
+	</tocitem>
+</toc>

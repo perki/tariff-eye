@@ -1,0 +1,39 @@
+<?xml version='1.0' ?>
+<!DOCTYPE map
+		PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN"
+		"http://java.sun.com/products/javahelp/map_2_0.dtd">
+
+<map version="2.0">
+	<!-- MANUAL PART -->
+	<mapID target="manual_toc" url="../contents/endir/manual/index.htm" />
+	
+	<!-- GUI PRESENTATION PART -->
+	<mapID target="gui_toc" url="../contents/endir/manual/GUIPresentation/index.htm" />
+	
+	<mapID target="gui_desktop" url="../contents/endir/manual/GUIPresentation/desktop/index.htm" />
+	<mapID target="gui_simulator" url="../contents/endir/manual/GUIPresentation/simulator/index.htm" />
+	<mapID target="gui_orderer" url="../contents/endir/manual/GUIPresentation/treeOrderer/index.htm" />
+	
+	<!-- TUTORIALS PART -->
+	<mapID target="tutorials_toc" url="../contents/endir/tutorials/index.htm" />
+	
+	<!-- TUTORIAL - HOWTO SIMULATION -->
+	<mapID target="t_sim_toc" url="../contents/endir/tutorials/howtoSimulation/index.htm" />
+	<mapID target="t_sim_open" url="../contents/endir/tutorials/howtoSimulation/openSimulation/index.htm" />
+	<mapID target="t_sim_fill" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm" />
+	<mapID target="t_sim_fill_a" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm#a" />
+	<mapID target="t_sim_fill_b" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm#b" />
+	<mapID target="t_sim_fill_c" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm#c" />
+	<mapID target="t_sim_fill_d" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm#d" />
+	<mapID target="t_sim_fill_e" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm#e" />
+	<mapID target="t_sim_fill_f" url="../contents/endir/tutorials/howtoSimulation/autoFill/index.htm#f" />
+	<mapID target="t_sim_view" url="../contents/endir/tutorials/howtoSimulation/viewTariff/index.htm" />
+	<mapID target="t_sim_view_a" url="../contents/endir/tutorials/howtoSimulation/viewTariff/index.htm#a" />
+	<mapID target="t_sim_discount" url="../contents/endir/tutorials/howtoSimulation/addDiscount/index.htm" />
+	<mapID target="t_sim_discount_a" url="../contents/endir/tutorials/howtoSimulation/addDiscount/index.htm#a" />
+	<mapID target="t_sim_discount_b" url="../contents/endir/tutorials/howtoSimulation/addDiscount/index.htm#b" />
+	<mapID target="t_sim_discount_c" url="../contents/endir/tutorials/howtoSimulation/addDiscount/index.htm#c" />
+	<mapID target="t_sim_results" url="../contents/endir/tutorials/howtoSimulation/viewResults/index.htm" />
+	<mapID target="t_sim_report" url="../contents/endir/tutorials/howtoSimulation/printResults/index.htm" />
+
+</map>

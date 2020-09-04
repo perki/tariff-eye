@@ -1,0 +1,92 @@
+/*
+*$Id: createBase.bsh,v 1.1 2006/12/03 12:48:34 perki Exp $
+*/
+setAccessibility(true);
+o("  TREE  CREATION TEST ");
+t = new Tarification(Special.generateTarificationId());
+t.setCreationTag("00BASE");
+b = t.getTreeBase();
+l =  t.getTree("loc");
+o(t);
+
+o("  NODE  CREATION TEST ");
+x1 = b.createNode("Frais de Gestion");
+x2 = b.createNode("Avoirs");
+x3 = b.createNode("Transactions");
+x4 = b.createNode("Services");
+x5 = b.createNode("Others");
+
+// frais de gestions (x1)
+x6 = b.createNode("Commission forfaitaire annuelle",x1);
+x7 = b.createNode("Frais de bouclements",x1);
+x8 = b.createNode("Relev�s bancaires",x1);
+x9 = b.createNode("Comission de d�pot et d'administration",x1);
+
+// Avoirs (x2)
+x10 = b.createNode("Cash",x2);
+x11 = b.createNode("Fiduciaires",x2);
+x12 = b.createNode("Fonds",x2);
+	// Fonds (x12)
+	x13 = b.createNode("Cash",x12);
+	x14 = b.createNode("Obligations",x12);
+	x15 = b.createNode("Actions",x12);
+
+x16 = b.createNode("Metaux Precieux",x2);
+x17 = b.createNode("Autres titres",x2);
+	// Autres titres (x17)
+	x18 = b.createNode("Treasury Bills",x17);
+	x19 = b.createNode("Commercial Papers",x17);
+	x20 = b.createNode("Participations",x17);
+		
+//Transactions (x3)
+x21 = b.createNode("Cash",x3);
+	//Cash (x21)
+	x22 = b.createNode("Caisse",x21);
+	x23 = b.createNode("Change",x21);
+		//Change (x23)
+		x24 = b.createNode("A Terme",x23);
+		x25 = b.createNode("Swap",x23);
+	
+	x26 = b.createNode("Ch�ques",x21);
+		//Ch�ques (x26)
+		x27 = b.createNode("Encaissements",x26);
+		x28 = b.createNode("Emissions",x26);
+
+x29 = b.createNode("Fiduciaires",x3);
+x30 = b.createNode("Fonds",x3);
+	// Fonds (x30)
+	x31 = b.createNode("Cash",x30);
+	x32 = b.createNode("Obligations",x30);
+	x33 = b.createNode("Actions",x30);
+
+x34 = b.createNode("Actions",x3);
+
+// services (x4)
+x35 = b.createNode("Location de coffre",x4);
+x36 = b.createNode("Pli ferm�",x4);
+
+o(t);
+
+// add everything else
+source("../nbc/src/bsh/indus.bsh");
+source("../nbc/src/bsh/market.bsh");
+source("../nbc/src/bsh/countries.bsh");
+source("../nbc/src/bsh/indices_boursiers.bsh");
+
+t.setCreationTag("");
+
+/*
+*$Log: createBase.bsh,v $
+*Revision 1.1  2006/12/03 12:48:34  perki
+*First commit on sourceforge
+*
+*Revision 1.3  2004/07/30 15:38:19  plegris
+*some changes
+*
+*Revision 1.2  2004/06/21 17:26:14  plegris
+*added compact tree node
+*
+*Revision 1.1  2004/05/20 09:39:43  plegris
+**** empty log message ***
+*
+*/

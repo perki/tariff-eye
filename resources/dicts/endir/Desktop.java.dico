@@ -1,0 +1,30 @@
+
+#<init>;
+Cascade;Cascade windows
+Tile;Tile windows
+
+#buildChildMenus;
+Desktop:iconifiedFrames subMenu;Iconified windows
+
+#checkCrash
+Drop;Drop
+It seems that your last Tariff Eye session had not terminated correcty and some work hasn't been saved. Would you like to continue this work now, to continue the next time you open Tariff Eye or to drop this work ?;It seems that your last Tariff Eye session had not terminated correcty and some work hasn't been saved. Would you like to continue this work now, to continue the next time you open Tariff Eye or to drop this work ?
+Later;Later
+Recover;Recover
+
+#createMenuBar;
+About;About
+Assistant;Assistant
+Console;Console...
+Creation;Creation
+Creation Gold;Creation Live
+Manage Currencies;Manage currencies...
+New Simulation;New simulation...
+New Tarification;New tarification
+Open Portofolio;Open portofolio...
+Open Simulation;Open simulation...
+Open Tarification;Open tarification...
+Simulation;Simulation
+TariffEye help...;Tariff Eye help...
+Tools;Tools
+Update Tariffs database;Update tariffs database

@@ -1,0 +1,12 @@
+
+
+#<init>;
+from bank;Sell
+to bank;Buy
+
+#getColumnName;
+Direction;Direction
+Nb;Nb
+
+
+

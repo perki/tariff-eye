@@ -1,0 +1,19 @@
+
+
+#<init>;
+Boolean;True / False
+Create New Option;Create new option
+Create new;Create new
+Delete Selected Option;Delete selected option
+Double Positive;Positive value
+NaturalInteger Option;Natural positive integer
+Percentage,PerMil °/. °/..;Percentage,PerMil °/. °/..
+Simple Option;Simple option
+Transaction;Transaction
+Use known option;Use an existing option
+
+#addToMenu;
+Case;Case
+Future;Future
+Percentage,PerMil ¡/. ¡/..;Percentage,PerMil ¡/. ¡/..
+Sum of amounts;Sum of amounts

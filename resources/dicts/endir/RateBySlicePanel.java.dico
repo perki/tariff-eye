@@ -1,0 +1,20 @@
+
+
+#getColumnName;
+Effective rate;Effective rate
+From;From
+Marginal rate;Marginal rate
+Min. Fee;Minimal fee
+
+#getDeleteButton;
+Delete selected slice;Delete selected slice
+
+#getPlusButton;
+Add a slice;Add a slice
+
+#getTypeChooser;
+Effective rate applies;Effective rate applies
+Marginal rate applies;Marginal rate applies
+
+
+

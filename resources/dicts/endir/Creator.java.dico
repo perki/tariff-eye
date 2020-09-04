@@ -1,0 +1,12 @@
+
+#buildFileMenu
+Tarification properties...;Tarification properties...
+
+#buildFileMenu;
+Fee Summary...;Fee Summary...
+
+#dispose;
+Creator:saveChangesMessage;<html><body>Tarification '%0' has changed.<br>Save changes?</body></html>
+
+#updateFrameTitle
+Creator:frameTitle;Tarification

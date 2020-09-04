@@ -1,0 +1,24 @@
+
+
+#<init>;
+Preferences;Preferences
+
+#buildLoadAndSavePrefPanel;
+Browse...;Browse...
+Load and save preferences;Load and save preferences
+Load location preference:;Load location preference:
+Look for files in default directory for saved tarifications;Look for files in saved tarifications directory
+Look for files in the last used directory;Look for files in the last used directory
+Saved tarification folder: ;Saved tarification directory: 
+Tarification library: ;Tarification library: 
+
+#initComponents;
+Done;Done
+Location for saved files :;Location for saved files :
+Select;Select
+
+#setMainDescription;
+Preference Panel description1;Modify parameters below
+
+
+

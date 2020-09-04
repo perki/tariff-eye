@@ -1,0 +1,9 @@
+classes
+.bcdata
+.settings
+depcache
+medias
+old_libs
+tests
+.cvsignore
+*~

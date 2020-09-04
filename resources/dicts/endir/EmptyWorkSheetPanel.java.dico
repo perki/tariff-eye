@@ -1,0 +1,30 @@
+
+
+#<init>;
+Clear All;Clear all
+Create WorkSheet;Create WorkSheet
+Create a dispatcher;Create a dispatcher
+Create a workPlace;Create a Workplace
+Empty Trash;Empty trash
+Paste;Paste
+Paste from trash;Paste from trash
+
+#addToMenu;
+DispatcherBounds;Bounds
+DispatcherCase;Case
+DispatcherIf;If
+EmptyWorkSheet;Empty
+FixedFeeWorkPlace;Fixed fee
+Futures fee by slice;Futures fee by slice
+Rate By Slice On Amount;Rate by slice on amount
+Rate on Amount;Rate on amount
+Sequence Dispatcher;Sequencer
+SimpleDispatcher;Simple dispatcher
+SimpleWorkPlace;Simple Workplace
+TransferOptions;Transfer options
+WorkPlaceAssetsRateBySlice;Rate by slice on asset
+WorkPlaceTrRateBySlice;Rate by slice on transaction
+WorkPlaceWithOnlyOptions;List of options
+
+
+

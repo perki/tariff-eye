@@ -1,0 +1,36 @@
+
+#caseDispatcherBounds
+Bounded fee: ;Bounded fee: 
+
+#caseDispatcherSequencer;
+The following sequence of tariffs are applied to this Workplace:;The following sequence of tariffs are applied to this workplace:
+
+#caseWorkPlaceRateBySliceOnAmount
+Fixed amount: 0 CHF;Fixed amount: 0 CHF
+
+#caseWorkPlaceRateBySliceOnAmount;
+Sum of assets of ;Sum of assets of 
+Sum of commissions of ;Sum of commissions of 
+
+#caseWorkPlaceRateOnAmount
+ on Amount %0 = %1; on Amount %0 = %1
+
+#caseWorkPlaceRateOnAmount;
+Amount from Tarif: ;Amount from tariff: 
+Commission from Tarif: ;Commission from tariff: 
+
+#caseWorkPlaceTransferOptions
+The tariff ' %0 ' (%1) is applied for this WorkPlace;The tariff ' %0 ' (%1) is applied for this WorkPlace
+
+#produceOptionReport;
+Constant money amount:;Constant money amount:
+Constant name:;Constant name:
+Constant value:;Constant value:
+Multiple choice:;Multiple choice:
+Simple choice:;Simple choice:
+or;or
+
+#recurse
+Applied discount: ;Applied discount: 
+Maximal perceived fee: ;Maximal perceived fee: 
+Minimal perceived fee: ;Minimal perceived fee: 

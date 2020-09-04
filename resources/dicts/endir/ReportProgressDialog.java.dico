@@ -1,0 +1,17 @@
+
+
+#displayError;
+Dismiss;Dismiss
+Error while generating Report;Error while generating report
+I am sorry but your report cannot be produced. I enountered errors. ; Your report cannot be produced. Errors were encountered. 
+See the error log for details and/or contact your Administrator about it.;See the error log for details and/or contact your Administrator about it.
+
+#displayInitializing;
+Preparing Report calculation...;Preparing Report calculation...
+
+#displayPhases;
+Generating report...;Generating report...
+Report Generation Progress;Report Generation Progress
+
+
+

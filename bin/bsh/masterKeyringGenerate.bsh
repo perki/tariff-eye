@@ -1,0 +1,23 @@
+import com.simpledata.keyring.*; 
+
+registry = new EntityRegistry(); 
+KeyBox.addNewEntityToRegistry( registry, "Simpledata SARL Master", "00SIMP"  ); 
+KeyBox.addNewEntityToRegistry( registry, "Simpledata SARL Developement Keys", "10SIMP"  ); 
+
+// ouput master keyring 
+f = new File( "master.keyring" ); 
+f.createNewFile(); 
+fs = new OutputStreamWriter( new FileOutputStream( f ), "utf8" ); 
+fs.write( registry.turnIntoString() ); 
+fs.close(); 
+
+// output simpledata work keyring
+f = new File( "simpledata.keyring" ); 
+f.createNewFile(); 
+fs = new OutputStreamWriter( new FileOutputStream( f ), "utf8" ); 
+fs.write( KeyBox.stripAndSerialize( registry, "10SIMP" ) ); 
+fs.close(); 
+
+
+
+

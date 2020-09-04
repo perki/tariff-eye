@@ -1,0 +1,49 @@
+
+
+#<init>;
+Tarification creation tool;Tarification creation tool
+
+#deleteTarifButtonActionPerformed;
+Warning. Current tarif will be permanently deleted.;Warning. Current tariff will be permanently deleted
+
+#getCreationTagMenu;
+Creation tag;Creation tag
+
+#initComponents;
+No tarif selected;No tariff selected
+
+#initCplxComponents;
+Base Tree;Base
+Indexes;Indexes
+Industry;Industry
+Localisation-Tree;Localisation
+Market;Market
+Obligations;Obligations
+Type of Funds;Type of Funds
+User-Tree;User
+
+#initStdComponents;
+Access to pairing properties of this Tarif;Access to pairing properties of this tariff
+Auto Shrink View;Auto compact
+Create new tarif;Create new tariff...
+Delete current tarif;Delete current tariff
+From file;From file
+Import;Import
+Open Tarif List;Open tariffs list...
+Publish...;Publish...
+Publish;Publish
+Tarification Creation Tool;Tarification creation tool
+Tarification Summary...;Tarification report...
+
+#modifyMe;
+Create Tarif;Create tariff
+assets;assets
+root;root
+simple;simple
+transactions;transactions
+
+#tarifModifierGetTitle;
+Tarification Creator;Tarification creator
+
+
+

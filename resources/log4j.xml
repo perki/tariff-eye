@@ -1,0 +1,55 @@
+﻿<?xml version= "1.0" encoding= "UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd " >
+
+<!-- $Id: log4j.xml,v 1.1 2006/12/03 12:48:44 perki Exp $ -->
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<appender name= "APPLCATION" class= "org.apache.log4j.RollingFileAppender" >
+		<param name= "File" value= "application.log"/>
+		<param name= "MaxFileSize" value= "100KB"/>
+		<param name= "MaxBackupIndex" value= "1"/>
+		<layout class= "org.apache.log4j.PatternLayout" >
+			<param name= "ConversionPattern" value= "%-5p [%t] %c{3}\t%m %l%n"/>
+		</layout >
+		<filter class= "org.apache.log4j.varia.LevelRangeFilter" >
+			<param name= "LevelMin" value= "error" />
+			<param name= "LevelMax" value= "fatal" />
+			<param name= "AcceptOnMatch" value= "true" />
+		</filter >
+	</appender >
+	
+	<appender name= "ECLPSERR" class= "org.apache.log4j.ConsoleAppender" >
+		<param name="Target" value="System.err" />
+		<layout class= "org.apache.log4j.PatternLayout" >
+
+			<param name= "ConversionPattern" value= "%-5r %-5p [%t] %c{3}\t%m %l%n"/>
+		</layout >
+		<filter class= "org.apache.log4j.varia.LevelRangeFilter" >
+			<param name= "LevelMin" value= "warn" />
+			<param name= "LevelMax" value= "fatal" />
+			<param name= "AcceptOnMatch" value= "true" />
+		</filter >
+	</appender >
+	
+	<appender name= "ECLPSOUT" class= "org.apache.log4j.ConsoleAppender" >
+		<param name="Target" value="System.out" />
+		<layout class= "org.apache.log4j.PatternLayout" >
+			<param name= "ConversionPattern" value= "%-5r %-5p [%t] %c{3}\t%m %l%n"/>
+		</layout >
+		<filter class= "org.apache.log4j.varia.LevelRangeFilter" >
+			<param name= "LevelMin" value= "debug" />
+			<param name= "LevelMax" value= "info" />
+			<param name= "AcceptOnMatch" value= "true" />
+		</filter >
+	</appender >
+	
+	<root >
+		<level value= "debug" />
+		<appender-ref ref= "APPLCATION" />
+		<appender-ref ref= "ECLPSERR" />
+		<appender-ref ref= "ECLPSOUT" />
+	
+	</root >
+
+</log4j:configuration >

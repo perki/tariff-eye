@@ -1,0 +1,15 @@
+
+
+#doAction;
+New Node;New
+
+#getPopupMenu;
+Cannot remove:node has childrens;Cannot remove this node. It has children
+Cannot remove:node is linked to a Tarif;Cannot remove this node. It is linked to a tariff
+Node protected;Node protected
+One of the children : is not moveable;One of the children is not moveable
+One of the children :Node protected;One of children is a protected node
+droprecursive;Drop with all contents
+
+
+

@@ -1,0 +1,17 @@
+
+#<init>
+the turnover is not re-calculated on transactions change;the turnover is not re-calculated on transactions change
+
+#<init>;
+Hide extra parameters;Hide extra parameters
+Rollout:;Turnover:
+Show extra parameters;Show extra parameters
+
+#refresh;
+Make the rollout value depend on parent;Make turnover value depend on parent
+Specify the rollout value;Specify the turnover value manually
+The percentage is the proportion of<BR>assets at this positions that do not<BR>participate in transaction distribution.;The percentage is the proportion of<BR>assets at this positions that do not<BR>participate in the transaction distribution
+The rollout value depend on parent's;Turnover value depends on parents
+
+#setChartProperties;
+No data to display;No data to display

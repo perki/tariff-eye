@@ -1,0 +1,3 @@
+
+Copy the tools.jar file from your JDK_HOME/lib directory into the
+lib directory of the JasperReports project.

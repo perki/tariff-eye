@@ -1,0 +1,29 @@
+
+#buildErrorUI;
+Simulator:launchErrorMessage;<html><body><center><h2>There has been an error</h2><h3>Please close the window and retry</h3></center></body></html>
+
+#dispose;
+Simulator:saveChangesMessage;<html><body>Simulation '%0' has changed.<br>Save changes?</body></html>
+
+#initStdComponents;
+Fee detailed report...;Fee detailed report...
+Fee report summary...;Fee report summary...
+Launch simulation;Launch simulation
+Order Trees;Tree orderer
+Reports;Reports
+Simulation tool;Simulation tool
+Tariffing report...;Tarification report...
+Tarifications;Tarifications for simulation
+View tarification content;View tarification content
+
+#menuData;
+Data;Data
+
+#stateChanged
+Fees;Fees
+
+#updateSimulationTitle
+Untitled;Untitled
+
+#updateSimulationTitle;
+Simulator:frameTitle;Portfolio

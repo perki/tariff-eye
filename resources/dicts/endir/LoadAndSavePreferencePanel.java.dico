@@ -1,0 +1,10 @@
+
+#buildMe
+Autosave:;Autosave:
+
+#correctPeriodLabel
+Minute;Minute
+Minutes;Minutes
+
+#validNewDir;
+The selected directory does not exist. Would you create it ?;<html><body>The selected directory does not exist.<br>Would you like to create it ?</body></html>

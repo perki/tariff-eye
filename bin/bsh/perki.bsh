@@ -1,0 +1,66 @@
+import java.beans.*;
+
+// DEBUG TOOL FOR CURRENCY PROBLEM
+// use example :
+// --- init ----- 
+// ldebug();  perki();
+//
+// ---- test ----- test(); 
+// Currency c = new Currency();
+// encode(c); // will encode c in Object and XML giving out the output
+// decode(); // will decode the data stored in Object and XML
+//    <change the default currency>
+// decode(); // decode again and see the differences
+
+
+
+ByteArrayInputStream lastXml;
+ByteArrayInputStream lastObj;
+
+public void encode(Object o) {
+	System.out.println("--------- ENCODE -------------:"+o);
+	xml = new ByteArrayOutputStream();
+	obj = new ByteArrayOutputStream();
+	
+	xmlo = new XMLEncoder(xml);
+	objo = new ObjectOutputStream(obj);
+	
+	try {
+		xmlo.writeObject(o); xmlo.close(); 
+		objo.writeObject(o); objo.close();
+		
+	} catch (IOException e) { }
+	
+	System.out.println("--------- XML -------------\n"+xml);
+	System.out.println("--------- OBJ -------------\n"+obj);
+	
+	// keep in memory 
+	lastXml = new ByteArrayInputStream(xml.toByteArray());
+	lastObj = new ByteArrayInputStream(obj.toByteArray());
+}
+
+Object xmld;
+Object objd;
+// decode data stored at last 
+public void decode() {
+	System.out.print("--------- DECODE -------------");
+	ObjectInputStream ois = new ObjectInputStream(lastObj);
+	XMLDecoder xis = new XMLDecoder(lastXml);
+	
+	try {
+		xmld = xis.readObject();lastXml.reset();
+		objd = ois.readObject();lastObj.reset();
+	} catch (IOException e) { }
+	System.out.print("-- XML :"+xmld);
+	System.out.println("    -- OBJ :"+objd);	
+}
+
+
+public void test() {
+	BC.getCurrencyManager().setDefaultCurrency(new Currency("USD"));
+	Currency cur = new Currency();
+	encode(cur);
+	decode();
+	BC.getCurrencyManager().setDefaultCurrency(new Currency("EUR"));
+	decode();
+}

@@ -1,0 +1,21 @@
+
+#<init>;
+Case editor;Case editor
+
+#deleteCaseButtonActionPerformed;
+OptionCasePanel:confirmCaseDeletion;<html><body>Deleting this case will delete it everywhere it is used with all of the associated content.<br> Are you sure you want to continue?</body></html>
+
+#initComponents
+CaseTitle;Case Title
+OptionCaseTitle;Option Title
+
+#initComponents;
+Case Title;Case title
+Edit;Edit
+Question : ;Question : 
+Selected answer :;Selected answer :
+cancel;cancel
+ok;ok
+
+#newCaseButtonActionPerformed;
+New case;New case

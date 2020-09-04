@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="resources/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="resources/lib/jfreechart-0.9.20.jar"/>
+	<classpathentry kind="lib" path="resources/lib/jasperreports-0.6.2.jar"/>
+	<classpathentry kind="lib" path="resources/lib/foxtrot.jar"/>
+	<classpathentry kind="lib" path="resources/lib/bsh-2.0b1.jar"/>
+	<classpathentry kind="lib" path="resources/lib/jcommon-0.9.5.jar"/>
+	<classpathentry kind="lib" path="resources/lib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="resources/lib/jhall.jar"/>
+	<classpathentry kind="lib" path="resources/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="resources/lib/commons-logging-1.0.2.jar"/>
+	<classpathentry kind="lib" path="resources/lib/alloy.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

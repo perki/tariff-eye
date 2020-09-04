@@ -1,0 +1,14 @@
+
+
+#<init>;
+Applies on all transactions;Applies on all transactions (buy and sell)
+Applies on transactions from bank;Applies for selling transactions
+Applies on transactions to bank;Applies for buying transactions
+Unkown type;Unkown type
+
+#getMethodChooser;
+Rate slice computed for each transation;Rate slice computed for each transaction
+Rate slice computed for the total transaction volume;Rate slice computed for the total transaction volume
+
+
+

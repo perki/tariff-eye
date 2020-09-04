@@ -1,0 +1,10 @@
+
+#initComponents
+Percentage,PerMil ?/. ?/..;*Percentage,PerMil ?/. ?/..
+
+#initComponents;
+Amount Under Commission;Sum of commissions
+Amount Under Tarif;Amount under tariff
+Money Amount;Money amount
+Sum of amounts within context;Sum of amounts within context
+WorkPlaceRateOnAmountPanel:InfoPanel:HelpMessage;First select a percentage option.<br>Then you need to select one amount type.<br>You can also use the + button on the OptionViewer

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install4j version="3.2.5">
+  <directoryPresets config="../../tariff-eye-media" />
+  <application name="Tariff Eye" distributionSourceDir="" applicationId="5099-3360-8868-4994" mediaDir="../../tariff-eye-media" mediaFilePattern="%FILE_NAME%_%PLATFORM%_%SOFT_VERSION%" compression="6" lzmaCompression="false" keepModificationTimes="false" shortName="TariffEye" publisher="Simple Data" publisherWeb="http://simpledata.ch" version="1.5.0" allPathsRelative="true" backupOnSave="false" autoSave="false" macSignature="????" javaMinVersion="1.5" javaMaxVersion="" allowBetaVM="false">
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <variables>
+      <variable name="FILE_NAME" value="Tariff-Eye" />
+      <variable name="SOFT_VERSION" value="I4J" />
+    </variables>
+  </application>
+  <files>
+    <mountPoints>
+      <mountPoint name="" id="7" location="" mode="755" />
+    </mountPoints>
+    <entries>
+      <dirEntry mountPoint="7" file="../../tariff-eye-distrib" overwrite="4" shared="false" mode="644" dontUninstall="false" excludeSuffixes="" dirMode="755">
+        <exclude>
+          <entry location="data" launcher="false" />
+        </exclude>
+      </dirEntry>
+    </entries>
+    <components />
+  </files>
+  <launchers>
+    <launcher name="TariffEye" id="2" external="false" excludeFromMenu="false" menuName="" icnsFile="../resources/images/appIcon.icns" pngIcon16File="../resources/images/appIcon1616.png" pngIcon32File="../resources/images/appIcon.png" macServiceDependencies="" allowUserChangeServiceStartType="true">
+      <executable name="TariffEye" type="1" iconSet="true" iconFile="" executableDir="" redirectStderr="true" stderrFile="error.log" redirectStdout="true" stdoutFile="output.log" failOnStderrOutput="false" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="">
+        <versionInfo include="false" fileVersion="0.0.2" companyName="" fileDescription="Tariff Eye" legalCopyright="SimpleData BearBull" productVersion="" internalName="tye" />
+      </executable>
+      <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="">
+        <text>
+          <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+          <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+        </text>
+      </splashScreen>
+      <java mainClass="com.simpledata.bc.BC" vmParameters="-ea -Xms64m  -Xmx256m" arguments="%SOFT_VERSION%" allowVMPassthroughParameters="false" minVersion="" maxVersion="" preferredVM="" allowBetaVM="false" jdkOnly="false">
+        <searchSequence>
+          <registry />
+          <envVar name="JAVA_HOME" />
+          <envVar name="JDK_HOME" />
+        </searchSequence>
+        <classPath>
+          <directory location="." failOnError="false" />
+          <scanDirectory location="resources/lib" failOnError="false" />
+          <archive location="tariff-eye.jar" failOnError="false" />
+        </classPath>
+        <nativeLibraryDirectories />
+      </java>
+      <includedFiles />
+    </launcher>
+    <launcher name="LauncherTariffEye" id="20" external="false" excludeFromMenu="true" menuName="" icnsFile="" pngIcon16File="../resources/images/appIcon1616.png" pngIcon32File="../resources/images/appIcon.png" macServiceDependencies="" allowUserChangeServiceStartType="true">
+      <executable name="LauncherTariffEye" type="1" iconSet="true" iconFile="" executableDir="resources" redirectStderr="true" stderrFile="launcherror.log" redirectStdout="false" stdoutFile="launchoutput.log" failOnStderrOutput="false" executableMode="1" changeWorkingDirectory="true" workingDirectory="../" singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="">
+        <versionInfo include="false" fileVersion="" companyName="" fileDescription="" legalCopyright="" productVersion="" internalName="" />
+      </executable>
+      <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="">
+        <text>
+          <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+          <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+        </text>
+      </splashScreen>
+      <java mainClass="com.simpledata.bc.Launcher" vmParameters="" arguments="" allowVMPassthroughParameters="true" minVersion="" maxVersion="" preferredVM="" allowBetaVM="false" jdkOnly="false">
+        <searchSequence>
+          <registry />
+          <envVar name="JAVA_HOME" />
+          <envVar name="JDK_HOME" />
+        </searchSequence>
+        <classPath>
+          <archive location="bc.jar" failOnError="false" />
+          <scanDirectory location="resources/lib" failOnError="false" />
+        </classPath>
+        <nativeLibraryDirectories />
+      </java>
+      <includedFiles />
+    </launcher>
+  </launchers>
+  <installerGui installerType="1" runUninstallerOnUpdate="false" addOnAppId="" suggestPreviousLocations="true" allowUnattendedInstall="false" useCustomHeaderImage="true" customHeaderImage="../resources/images/appIcon.png" customSize="false" customWidth="500" customHeight="390">
+    <customCode preAction="false" preActionClass="" postAction="false" postActionClass="" preUninstallAction="false" preUninstallActionClass="" postUninstallAction="false" postUninstallActionClass="" initHandler="false" initHandlerClass="" directoryValidator="false" directoryValidatorClass="" installationHandler="false" installationHandlerClass="" />
+    <standardScreens>
+      <screen id="welcome" enabled="true" useCustomBanner="false" bannerImageFile="" background="255,255,255" />
+      <screen id="license" enabled="true" file="../COPYING_Tariff-Eye.txt" />
+      <screen id="location" enabled="true" showSpace="true" suggestAppDir="true" />
+      <screen id="components" enabled="false" allSelected="true" firstMandatory="true">
+        <selectedComponents />
+        <mandatoryComponents />
+      </screen>
+      <screen id="programGroup" enabled="false" />
+      <screen id="fileAssociations" enabled="true">
+        <associations>
+          <association extension="tye" description="Tariff-Eye File" winIconFile="" launcherId="20" selected="true" windows="true" macos="true" macIconFile="" />
+        </associations>
+      </screen>
+      <screen id="services" enabled="false" allSelected="true">
+        <selectedServiceLaunchers />
+      </screen>
+      <screen id="additionalTasks" enabled="false" customTasksPlacement="1">
+        <customTasks />
+      </screen>
+      <screen id="preInfo" enabled="false" file="" />
+      <screen id="install" enabled="true" />
+      <screen id="postInfo" enabled="false" file="" />
+      <screen id="finished" enabled="true" useCustomBanner="false" bannerImageFile="" background="255,255,255" />
+    </standardScreens>
+    <customScreens />
+  </installerGui>
+  <mediaSets>
+    <win32 name="Windows" id="3" mediaFileName="" installDir="TariffEye" allLaunchers="true" includedJRE="" manualJREEntry="false" bundleType="1" jreURL="" jreFtpURL="" jreShared="false" customInstallBaseDir="" allowUserStartAfterFinish="true" launchExecutableId="2" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="3" desktopLauncherId="2" programGroup="Tariff Eye" allowUserDisableStartMenuCreation="true" reboot="false" rebootUninstaller="false" modeQuickLaunchIon="1">
+      <selectedLaunchers>
+        <launcher id="2" />
+        <launcher id="20" />
+      </selectedLaunchers>
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+      <additionalStartMenuEntries />
+    </win32>
+    <win32 name="Windows with jre" id="11" mediaFileName="%FILE_NAME%_%SOFT_VERSION%_wjre" installDir="TariffEye" allLaunchers="true" includedJRE="windows-x86-1.5.0_08" manualJREEntry="false" bundleType="1" jreURL="" jreFtpURL="" jreShared="false" customInstallBaseDir="" allowUserStartAfterFinish="true" launchExecutableId="2" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="3" desktopLauncherId="2" programGroup="Tariff Eye" allowUserDisableStartMenuCreation="true" reboot="false" rebootUninstaller="false" modeQuickLaunchIon="1">
+      <selectedLaunchers>
+        <launcher id="2" />
+        <launcher id="20" />
+      </selectedLaunchers>
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+      <additionalStartMenuEntries />
+    </win32>
+    <macos name="Mac OS X Single Bundle" id="48" mediaFileName="" installDir="TariffEye" allLaunchers="false" customInstallBaseDir="" allowUserStartAfterFinish="false" launchExecutableId="" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="1" desktopLauncherId="">
+      <selectedLaunchers>
+        <launcher id="2" />
+      </selectedLaunchers>
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+    </macos>
+    <unixInstaller name="Unix Installer" id="19" mediaFileName="" installDir="TariffEye" allLaunchers="false" includedJRE="" manualJREEntry="false" bundleType="1" jreURL="" jreFtpURL="" jreShared="false" customInstallBaseDir="" allowUserStartAfterFinish="false" launchExecutableId="" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="1" desktopLauncherId="" customScriptMode="1" customScriptFile="">
+      <selectedLaunchers>
+        <launcher id="2" />
+        <launcher id="20" />
+      </selectedLaunchers>
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+      <customScriptLines />
+    </unixInstaller>
+  </mediaSets>
+  <buildIds buildAll="false">
+    <mediaSet refId="45" />
+  </buildIds>
+</install4j>
+

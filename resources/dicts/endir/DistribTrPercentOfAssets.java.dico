@@ -1,0 +1,9 @@
+
+#getSummary
+Size of line is %0%% of total assets :;Size of line is %0%% of total assets :
+
+#getSummary;
+Size of line is %0%% of assets.;Size of line is %0%% of assets
+
+#getUI;
+Size of line is a percentage of assets:;Size of line is a percentage of assets:

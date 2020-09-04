@@ -1,0 +1,181 @@
+<!--
+Copyright (c) 2003 to 2007
+	SimpleData Sarl http://simpledata.ch  All rights reserved.
+	
+Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+This file is part of TariffEye.
+
+    TariffEye is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    TariffEye is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with TariffEye; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+
+<project name="Tariff Eye" default="compile" basedir=".">
+<property name="version" value="1.5.0"/>
+	
+<property name="appname" value="tariff-eye"/>
+<property name="jarfile" value="${appname}.jar"/>
+   
+<property name="dist" value="../${appname}-distrib"/>
+   
+<property name="lib" value="resources/lib"/>
+<property name="srcdir" value="./src" />
+<property name="classesdir" value="./classes" />
+<property name="testreportsdir" value="./tests" />
+
+<property name="file.encoding" value="UTF-8"></property>
+
+<!-- Install4J part -->
+	
+<property name="I4J_LICENSE_ID" value="DEVL"/>
+<property name="I4J_FILE_DIR" value="../${appname}-media"/>
+<property name="I4J_FILE_NAME" value="TariffEye"/>
+	
+	<!-- Notes for I4J_MEDIA
+		This does determine which OS is build
+		11 : Windows with JRE
+		 3 : Windows without JRE
+		48 : MacOSX (.dmg) without jre
+		19 : UNIX graphical installer (.sh) without JRE
+	-->
+   <property name="I4J_MEDIA" value="19"/>
+	
+	 <target name="media" depends="dist">
+	        <mkdir dir="${I4J_FILE_DIR}"/>
+	        <taskdef name="install4j"
+	               classname="com.install4j.Install4JTask"
+	               classpath="C:\Program Files\install4j_pro\bin\install4j.jar:C:\java\install4j_pro\bin\install4j.jar:/opt/install4j_3/bin/install4j.jar:/Applications/install4j 3/bin/install4j.jar"/>
+	        	<install4j projectfile="installer/tariff-eye.install4j" 
+	        		   destination="${I4J_FILE_DIR}/"
+	        		   buildids="${I4J_MEDIA}">
+	        	<variable name="FILE_NAME" value="${I4J_FILE_NAME}"/>
+	        	<variable name="SOFT_VERSION" value="${version}"/>
+	    	</install4j>
+	     </target>
+<!--- end of Install4J -->
+	
+	
+   <path id="project.classpath">
+      <pathelement path="${classesdir}"/>
+      <fileset dir="${lib}" includes="**/*.jar"/>
+   </path>
+
+
+	<!-- Init the make process -->
+	<target name="init" description="init the make process">
+	<!-- Create the time stamp -->
+	 <tstamp/>
+	
+	 <mkdir dir="${classesdir}"/>
+	<mkdir dir="${testreportsdir}"/>
+	 
+	<depend srcdir="${srcdir}"
+		destdir="${classesdir}"
+		cache="depcache"
+		closure="yes"/>
+	
+	</target>
+               
+   <target name="compile" depends="init" 
+      description="Compile all java files">
+    <!-- Analyze dependencies and clean all files that are out of
+         date. This should eliminate the need for ant clean. (ksc) -->
+    
+    <javac srcdir="${srcdir}" destdir="${classesdir}" debug="true" source="1.5" encoding="${file.encoding}" includes="com/simpledata/bc/**" deprecation="${deprecation}">
+         <classpath refid="project.classpath"/>
+     </javac>
+   
+   </target>
+ 
+   <target name="doc" description="Build documentation (internal use)">
+      <javadoc source="1.4" packagenames="com.simpledata.bc.*" classpathref="project.classpath" sourcepath="./src" destdir="docs">
+         <classpath refid="project.classpath"/>
+      </javadoc>
+   </target>
+
+   <target name="jar" depends="compile" description="Compile the project in the current directory">
+     <mkdir dir="${dist}"/>
+     <jar jarfile="${dist}/${jarfile}">
+         <fileset dir="${classesdir}">
+	     <include name="com/simpledata/**/*.class"/>
+	 </fileset>
+	 <manifest>
+	    <attribute name="Built-By" value="${user.name}"/>
+	    <attribute name="Main-Class" value="com.simpledata.bc.BC"/>
+	    <section name="www.simpledata.ch">
+	       <attribute name="Implementation-Title" value="TariffEye"/>
+	       <attribute name="Implementation-Vendor" value="Simple Data"/>
+	       <attribute name="Implementation-URL" value="http://www.tariffeye.com"/>
+	       <attribute name="Implementation-Version" value="${version}"/>
+	    </section>
+	 </manifest>
+      </jar>
+   </target>
+   
+   <target name="test" depends="compile"
+	description="Test all classes that have unit tests associated." >
+	
+	<junit printsummary="yes" haltonfailure="yes">
+		<classpath refid="project.classpath"/>
+		
+		<formatter type="plain"/>
+		
+		<batchtest fork="no" todir="tests">
+			<fileset dir="${srcdir}">
+			  <include name="**/*Test*.java"/>
+			</fileset>
+		</batchtest>
+	</junit>
+	
+  </target>
+   
+
+   <target name="dist" depends="jar" description="Build a distribution ready structure">
+     <mkdir dir="${dist}/data/db"/>
+     <copy todir="${dist}">
+       <fileset dir="." defaultexcludes="yes">
+	      <include name="**/*.jar"/>
+	      <include name="resources/**/*"/>
+	      <include name="run"/>
+       	<include name="tarifications/*.tye"/>
+	      <exclude name="resources/**/*.dfPackage"/>
+	    </fileset>
+     </copy>
+   </target>
+
+
+   
+ 
+   <target name="dist-clean">
+      <delete>
+         <fileset dir="${dist}"/>
+      </delete>
+   </target>
+
+   <target name="clean">
+      <delete>
+          <fileset dir=".">
+	          <include name="**/*.class"/>
+          </fileset>  
+          <fileset dir="depcache" >
+            <include name="*" />
+          </fileset>
+          <fileset dir="${testreportsdir}">
+            <include name="*.txt" />
+          </fileset>
+      </delete>
+   </target>
+
+</project>

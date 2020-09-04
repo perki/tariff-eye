@@ -1,0 +1,13 @@
+
+#showPairingDialog
+Do you want to pair this Tarif with :;Do you want to pair this Tarif with :
+You cannot pair it because a problem has been detected on tarif:;You cannot pair it because a problem has been detected on tariff:
+
+#showPairingDialog;
+Break Pairing;Break Pairing
+Do you want to create a new paired Tarif ?;Do you want to create a new paired Tariff ?
+Jump To;Jump To
+OK;Ok
+Pairing Infos;Pairing Infos
+This tarif cannot be paired there is no no equivalent position in pair tree;This tariff cannot be paired, there is no no equivalent position in pair tree
+This tarif is paired with:;This tariff is paired with:

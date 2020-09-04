@@ -1,0 +1,64 @@
+// debug utilities
+
+
+// set show on
+
+show();
+
+// imports
+// bc
+import com.simpledata.bc.tools.*; 
+import com.simpledata.bc.datatools.*;
+import com.simpledata.bc.uitools.*;
+import com.simpledata.bc.datamodel.*;
+import com.simpledata.bc.datamodel.event.*;
+import com.simpledata.bc.components.tarif.*;
+import com.simpledata.bc.datamodel.money.*;
+import com.simpledata.bc.merging.*;
+
+// sdl
+import com.simpledata.filetools.*;
+import com.simpledata.uitools.*;
+/**
+* map o() to BC.out()
+*/
+public void o(Object z) {
+	BC.out(z.toString());
+};
+
+/**
+* Save object to file
+*/
+public void s(Object z,String filename) {
+	IOLib.save(z,filename);
+};
+
+/**
+* Load object from file
+*/
+public Object l(String filename) {
+	return IOLib.load(filename);
+};
+
+/**
+* tools to output a vector
+*/
+public void ov(ArrayList v) {
+	o("ArrayList view");
+	for (int i = 0; i < v.size(); i++) {
+		String l = " "+i+"="+v.elementAt(i).toString();
+		o(l);
+	}
+}
+
+/** load test.bsh **/
+public void test() {
+	setNameSpace(rootNamespace) ;
+	source("src/bsh/test.bsh");
+}
+
+/** load perki sh script **/
+public void perki() {
+	setNameSpace(rootNamespace) ;
+	source("src/bsh/perki.bsh");
+}

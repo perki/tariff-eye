@@ -1,0 +1,32 @@
+
+
+#<init>;
+Register Tariff-Eye;Register Tariff Eye
+
+#exitForm;
+Software not registred;Software not registred
+
+#idLabel;
+Licence ID:;Licence ID:
+
+#lockCode;
+Lock code:;Lock code:
+
+#popupFailed;
+Quit and continue in demo mode;Quit and continue in demo mode
+Quit or Retry?;Quit or Retry?
+
+
+#refresh;
+Software is not registered, please unlock it.;Software is not registered, please unlock it
+Tariff-Eye has been packaged for:;Tariff-Eye has been packaged for:
+
+#validateButton;
+Validate;Validate
+
+#validateCode;
+Invalid registration code;Invalid registration code
+Software successfuly registred;Software successfully registered
+
+
+
